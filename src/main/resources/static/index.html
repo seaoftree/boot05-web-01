@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+<h1>欢迎光临！</h1>
+<form action="/user" method="get">
+    <input value = "REST-GET 提交" type="submit"/>
+
+</form>
+<form action="/user" method="post">
+    <input value = "REST-POST 提交" type="submit"/>
+</form>
+
+<form action="/user" method="post">
+    <input value = "REST-DELETE 提交" type="submit"/>
+<!--    <input name = "_method" type="hidden" value=delete>-->
+    <input name = "_m" type="hidden" value=delete>
+</form>
+
+<form action="/user" method="post">
+    <input value = "REST-PUT 提交" type="submit"/>
+    <input name = "_method" type="hidden" value=Put>
+</form>
+
+<h1>测试基本注解</h1>
+<ul>
+    <a href = "car/3/owner/sea?age=18&interest=basketball&table">car/{id}/owner/{username}</a>
+    <li>@PathVariable(路径变量)</li>
+</ul>
+
+测试封装POJO
+<form action = "/saveuser" method="post">
+    姓名： <input name = "userName" value = "zhangsan"><br/>
+    年龄： <input name = "age" value="18"><br/>
+    生日： <input name = "birth" value="2021/12/12"><br/>
+    宠物姓名：<input name = "pet.name" value="mimi"><br/>
+    宠物年龄：<input name = "pet.age" value = "2"><br/>
+    <input type = "submit" value="保存">
+
+</form>
+</body>
+</html>

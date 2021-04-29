@@ -14,6 +14,6 @@ public class Test {
         System.out.println("pull test");
         System.out.println("gitee test");
         System.out.println("github test");
-        System.out.println("ssh test");
+        System.out.println("SSHxx test");
     }
 }
